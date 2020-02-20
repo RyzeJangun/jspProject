@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="userManage">
+	<!--로그인 -->
+	<select id="login" parameterType="userManage.dto.UserManageDTO" resultType="String">
+		select name from manage where id=#{id} and pw=PACK_ENCRYPTION_DECRYPTION.FUNC_ENCRYPT(#{pw})
+	</select>
+	
+	<!--회원가입-->
+	<insert id="join" parameterType="userManage.dto.UserManageDTO">
+	    insert 
+	    into manage (id,pw,name,birth,gender,email,hp,address,ad) 
+	    values (#{id},PACK_ENCRYPTION_DECRYPTION.FUNC_ENCRYPT(#{pw}),
+	    #{name},#{birth},#{gender},#{email},#{hp},#{address},#{ad})
+	</insert>
+	
+	<!--나의 회원정보 -->
+	<select id="myInfo" resultType="userManage.dto.UserManageDTO">
+	    select * from manage where id=#{id}
+	</select>
+	
+	
+	<!-- 나의 회원정보 수정 -->
+	<update id="infoUpdate">
+	    update manage set pw=(PACK_ENCRYPTION_DECRYPTION.FUNC_ENCRYPT(#{pw}),
+	    birth=#{birth},gender=#{gender},email=#{email},hp=#{hp},address=#{address},ad=#{ad}
+	    where id=#{id}
+	</update>
+	
+	<!-- 회원탈퇴 -->
+	<delete id="infoDelete" parameterType="String">
+    delete from manage
+    where id=#{id}
+  </delete>
+
+	
+	
+</mapper>

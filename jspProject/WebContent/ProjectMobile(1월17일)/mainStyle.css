@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+.player_controller {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 90;
+    height: 81px;
+    background-color: rgba(25, 25, 25, 0.96);
+}
+.header.side_bar {
+    bottom: 81px;
+    left: 0;
+    width: 250px;
+}
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 60;
+    background-color: rgba(25, 25, 25, 0.96);
+}
+
+.content {
+    position: relative;
+    width: 964px;
+    margin: 0 auto;
+}
+
+.my_menu {
+    overflow-y: auto;
+    position: absolute;
+    top: 73px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0 15px 40px;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}

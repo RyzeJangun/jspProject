@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+  .menu_bar{
+    position: fixed;
+    top: 0;
+    bottom: 81px;
+    left: 0;
+    z-index: 60;
+    width: 225px;
+    background-color: black;
+  }
+  
+  .list{
+      font-size:5em; 
+      font-weight: bold;
+      color:white;     
+  }

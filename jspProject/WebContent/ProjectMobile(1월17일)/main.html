@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jQuery Mobile</title>
+<link type="text/css" rel="stylesheet" href="mainStyle.css">
+<link type="text/css" rel="stylesheet" href="concept.css">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+ <header class="header side_bar">
+ <div class="my_menu">
+ <div data-role="button" class="ui-block-a" data-theme="b">
+  구독
+ </div>
+ </div>
+ </header>
+<div data-role="page" id="main" title="메인창" class="type">
+ <div data-role="side" style="text-align: center;">
+<div data-role="panel" id="panel1" data-display="overlay" 
+  data-theme="b" data-position="right">
+    <form>
+      <h1>로그인 패널</h1>
+      <table>
+      <tr><td>ID : </td>
+      <td><input name="name" id="name" type="text" value="" 
+      data-mini="true" data-clear-btn="true"></td>
+     <tr><td>비밀번호 : </td>
+      <td><input name="password" id="password" type="password" 
+      value="" data-mini="true" data-clear-btn="true"></td></tr>
+      </table>
+      <div class="ui-grid-a">
+        <div class="ui-block-a"><a href="#" 
+        data-role="button" data-rel="close">로그인</a>
+        </div>
+        <div class="ui-block-b"><a href="#" 
+        data-role="button" data-rel="close">회원가입</a>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div data-role="panel" id="panel2" data-display="overlay" data-position="right" data-theme="b">
+    <ul data-role="listview">
+      <li data-icon="delete"><a href="#" 
+      data-rel="close">메뉴 패널 종료</a>
+      <li><a href="#">메뉴1</a></li>
+      <li><a href="#">메뉴2</a></li>
+      <li><a href="#">메뉴3</a></li>
+      <li><a href="#">메뉴4</a></li>
+    </ul>
+  </div>
+  <div data-role="panel" id="panel3" data-display="overlay" 
+  data-position="right">
+    <h3>패널 메모</h3>
+    <p>오른쪽 메모 패널 영역입니다.</p>
+    <a href="#page1" data-role="button" data-rel="close" 
+    data-inline>패널 종료</a>
+  </div>
+  
+  <div data-role="content">
+    <a href="#panel1" data-role="button" data-inline="true">
+    로그인 패널</a>
+    <a href="#panel2" data-role="button" data-inline="true">
+    메뉴 패널</a>
+    <a href="#panel3" data-role="button" data-inline="true">
+    메모 패널</a>
+  </div>
+  </div>
+    <div data-role="content" style="text-align: center; border-top: silver solid 1px; display: inline-block; width: 60%;
+     margin: 300px; padding: 10px;" class="type"> 
+     <a style="width: 20%; height:5%; background-color: white; display: inline-block; font-size: 0.7rem; text-align:center;">    
+     <img src="images/아이유 Love poem.jpg" width="90%" height="90%"><br> 
+           순위 - 1위<br><br>
+           가수/그룹명  - 아이유<br><br>
+           곡 제목 - Blueming<br><br>
+           앨범 명 - Love Poem<br><br>
+           듣기 <br> 
+     <audio preload="none" controls><source src="mp3/Blueming (Blueming).mp3" type="audio/mpeg" media="images/아이유 Love poem.jpg"></audio>
+     </a>
+     
+     <a style="width: 20%; height:5%; background-color: white; display: inline-block; font-size: 0.7rem;">
+     <img src="images/노을 늦은 밤 너의 집 앞 골목길에서.jpg" width="90%" height="90%"><br>
+     순위 - 2위<br><br>
+     가수/그룹명 - 노을<br><br>
+     곡제목 - 늦은 밤 너의 집 앞 골목길에서<br><br>
+     앨범 명 - 늦은 밤 너의 집 앞 골목길에서  <br><br>
+     듣기<br>
+     <audio preload="none" controls><source src="mp3/노을 - 늦은 밤 너의 집 앞 골목길에서   가사.mp3" type="audio/mpeg"></audio>
+     </a>
+     
+     <a style="width: 20%; height:5%; background-color: white; display: inline-block; font-size: 0.7rem;">
+     <img src="images/아이유 Love poem.jpg" width="90%" height="90%"><br>
+           순위 - 3위<br><br>
+           가수/그룹명  - 아이유<br><br>
+           곡 제목 - Love Poem<br><br>
+           앨범 명 - Love Poem<br><br>
+           듣기 <br> 
+     <audio preload="none" controls><source src="mp3/Love poem (Love poem).mp3" type="audio/mpeg"></audio>
+     </a>
+     
+     <a style="width: 20%; height:5%; background-color: white; display: inline-block; font-size: 0.7rem;">
+     <img src="images/마마무 reality in black.jpg" width="90%" height="90%"><br>
+            순위 - 4위<br><br>
+           가수/그룹명  - 마마무<br><br>
+           곡 제목 - HIP<br><br>
+           앨범 명 - reality in BLACK<br><br>
+           듣기 <br>
+     <audio preload="none" controls><source src="mp3/MAMAMOO (마마무) - HIP (Color Coded Lyrics Eng Rom Han 가사).mp3"></audio>            
+     </a>
+     
+     <a style="width: 20%; height:5%; background-color: white; display: inline-block; font-size: 0.7rem;">
+     <img src="images/Into the Unknown.jpg" width="90%" height="90%"><br>
+           순위 - 5위<br><br>
+           가수/그룹명  - Panic! At the DISCO<br><br>
+           곡 제목 - Into the Unknown<br><br>
+           앨범 명 - 겨울왕국2 OST<br><br>
+           듣기 <br> 
+     <audio preload="none" controls><source src="mp3/Panic! At The Disco - Into the Unknown (From  Frozen 2 ).mp3" type="audio/mpeg"></audio>
+     </a>
+     
+     <a style="width: 20%; height:5%; background-color: white; display: inline-block; font-size: 0.7rem;">
+     <img src="images/이 번호로 전화해줘.jpg" width="90%" height="90%"><br>
+            순위 - 6위<br><br>
+           가수/그룹명  - 바이브<br><br>
+           곡 제목 - 이 번호로 전화해줘<br><br>
+           앨범 명 - 이 번호로 전화해줘<br><br>
+           듣기 <br>
+     <audio preload="none" controls><source src="mp3/바이브 - 이 번호로 전화해줘   가사.mp3" type="audio/mpeg"></audio> 
+     </a>
+     
+       <a style="width: 20%; height:5%; background-color: white; display: inline-block; font-size: 0.7rem;">
+     <img src="images/악동뮤지션 항해.jpg" width="90%" height="90%"><br>
+            순위 - 7위<br><br>
+           가수/그룹명  - 악동뮤지션<br><br>
+           곡 제목 - 어떻게 이별까지 사랑하겠어, <br>널 사랑하는 거지<br><br>
+           앨범 명 - 항해<br><br>
+           듣기 <br>
+     <audio preload="none" controls><source src="mp3/AKMU - '어떻게 이별까지 사랑하겠어, 널 사랑하는 거지(How can I love the heartbreak, you`re the one I love)' M V.mp3" type="audio/mpeg"></audio> 
+     </a>
+     
+     <a style="width: 20%; height:5%; background-color: white; display: inline-block; font-size: 0.7rem;">
+     <img src="images/장범준 멜로가 체질OST.jpg" width="90%" height="90%"><br>
+            순위 - 8위<br><br>
+           가수/그룹명  - 장범준<br><br>
+           곡 제목 - 흔들리는 꽃들 속에서 <br>네 샴푸향이 느껴진거야<br><br>
+           앨범 명 - 멜로가 체질 OST Part 3<br><br>
+           듣기 <br>
+     <audio preload="none" controls><source src="mp3/AKMU - '어떻게 이별까지 사랑하겠어, 널 사랑하는 거지(How can I love the heartbreak, you`re the one I love)' M V.mp3" type="audio/mpeg"></audio> 
+     </a>
+     
+     <a style="width: 20%; height:5%; background-color: white; display: inline-block; font-size: 0.7rem;">
+     <img src="images/아이유 Love poem.jpg" width="90%" height="90%"><br>
+            순위 - 9위<br><br>
+           가수/그룹명  - 아이유<br><br>
+           곡 제목 - 시간의 바깥<br><br>
+           앨범 명 - Love Poem<br><br>
+           듣기 <br>
+    <audio preload="none" controls><source src="mp3/above the time (시간의 바깥).mp3" type="audio/mpeg"></audio> 
+     </a>
+     
+     <a style="width: 20%; height:5%; background-color: white; display: inline-block; font-size: 0.7rem;">
+     <img src="images/송하예 새 사랑.jpg" width="90%" height="90%"><br>
+            순위 - 10위<br><br>
+           가수/그룹명  - 송하예<br><br>
+           곡 제목 - 새 사랑<br><br>
+           앨범 명 - 새 사랑<br><br>
+           듣기 <br>
+     <audio preload="none" controls><source src="mp3/송하예 - 새 사랑   가사.mp3" type="audio/mpeg"></audio> 
+     </a>
+     </div>
+     </div>
+          <div data-role="footer" data-position="fixed" data-id="footerid1">
+    <div data-role="navbar" class="player_controller">
+      <p style="text-align:center;"><img src="images/재생버튼2.JPG" width="50px" height="50px"></p>
+    
+    </div>
+   </div>
+</body>
+</html>
